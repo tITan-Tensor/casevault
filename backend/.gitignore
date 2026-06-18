@@ -1,0 +1,12 @@
+# --- Security / Secrets ---
+.env
+
+# --- Node Modules (Massive files) ---
+node_modules/
+
+# --- Logs ---
+npm-debug.log*
+yarn-error.log*
+
+# --- OS Generated Files ---
+.DS_Store
