@@ -26,7 +26,7 @@ export default function Login() {
       const payload = isLogin ? { email, password } : { name, email, password };
 
       // 3. Send the request to the Kitchen
-      const response = await fetch(`https://casevault-8n9f.onrender.com${endpoint}`, {
+      const response = await fetch(`https://casevault-6n9f.onrender.com${endpoint}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

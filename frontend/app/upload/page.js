@@ -38,7 +38,7 @@ export default function Upload() {
 
     try {
       // 3. Send the data to the Express Backend
-      const response = await fetch("https://casevault-8n9f.onrender.com/api/slides", {
+      const response = await fetch("https://casevault-6n9f.onrender.com/api/slides", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

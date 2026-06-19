@@ -24,7 +24,7 @@ export default function Home() {
 
     const fetchSlides = async () => {
       try {
-        let url = `https://casevault-8n9f.onrender.com/api/slides?`;
+        let url = `https://casevault-6n9f.onrender.com/api/slides?`;
         if (searchTerm) url += `search=${searchTerm}&`;
         if (selectedTag) url += `tag=${selectedTag}`;
 
@@ -58,7 +58,7 @@ export default function Home() {
     if (!window.confirm("Are you sure you want to delete this presentation?")) return;
 
     try {
-      const response = await fetch(`https://casevault-8n9f.onrender.com/api/slides/${id}`, {
+      const response = await fetch(`https://casevault-6n9f.onrender.com/api/slides/${id}`, {
         method: 'DELETE',
         headers: { 'auth-token': token }
       });
@@ -94,7 +94,7 @@ export default function Home() {
       // Convert the string "Strategy, Tech" back into an array ["Strategy", "Tech"]
       const tagsArray = editForm.tags.split(",").map(tag => tag.trim()).filter(tag => tag !== "");
 
-      const response = await fetch(`https://casevault-8n9f.onrender.com/api/slides/${editingSlide}`, {
+      const response = await fetch(`https://casevault-6n9f.onrender.com/api/slides/${editingSlide}`, {
         method: 'PUT',
         headers: { 
           'Content-Type': 'application/json',
