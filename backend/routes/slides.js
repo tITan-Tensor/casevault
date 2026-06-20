@@ -30,9 +30,9 @@ router.get('/', async (req, res) => {
     // 3. Build the sorting rule (Latest Submissions)
     let sortOption = {};
     if (sort === 'latest') {
-      sortOption.createdAt = -1; // -1 means newest first (descending)
+      sortOption.createdAt = 1; // -1 means newest first (descending)
     } else {
-      sortOption.createdAt = 1;  // 1 means oldest first (ascending)
+      sortOption.createdAt = -1;  // 1 means oldest first (ascending)
     }
 
     // 4. Ask MongoDB for the data, applying all filters and pagination
